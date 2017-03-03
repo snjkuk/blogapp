@@ -1,3 +1,3 @@
 class Comnnt < ApplicationRecord
-	belong_to :blog
+	belongs_to :blog
 end
