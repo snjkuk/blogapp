@@ -1,0 +1,2 @@
+class Categoryy < ApplicationRecord
+end
