@@ -1,0 +1,19 @@
+<h1>Blog Search</h1>
+
+<%= form_for search_path, method: :get do |f| %>
+  <p>
+    <%= f.label "Search for" %>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag "Go", name: nil %>
+  </p>
+<% end %>
+
+<ul>
+  <% @blogs.each do |blog| %>
+    <li>
+      <h3>
+        <%= link_to blog.title, controller: "blogs", action: "show", id: blog._id%>
+      </h3>
+    </li>
+  <% end %>
+</ul>

@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1><Blogs></h1>
-    <p>
-      <h3>BlogSearch</h3> <%= text_field_tag :search, params[:search], :class => "textfield-search" %>
-      <%= submit_tag "Search", :name => nil, :class => "search-button" %>
-    </p>
- 
-
+<h1>Blog Search</h1>
+<%= form_tag blogs_path(@blog), :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :title => nil %>
+  </p>
+<% end %>
+<%= @blog %>
 <table>
   <thead>
     <h1>BLOG</h1>
