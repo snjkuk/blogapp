@@ -27,12 +27,10 @@
     
   </div>
 
-  <!-- <div class="field">
-    <%= f.label :dropdown %>
-    <%= f.text_area :dropdown %>
-  </div> -->
-  <%= select_tag(:category, options_for_select([['Category1', 1], ['Category2', 2],['Category3', 3], ['Category4', 4]])) %>
-
+  <div class="field">
+  <%= f.label :dropdown %>
+ <%= f.select(:categoryy, Categoryy.all.map{|cat| cat.title})%>
+</div>
   <div class="actions">
     <%= f.submit %>
   </div>

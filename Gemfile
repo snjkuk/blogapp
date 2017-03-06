@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'activeadmin', github: 'activeadmin'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+
+gem "rmagick"
+gem "carrierwave"

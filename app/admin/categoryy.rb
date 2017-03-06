@@ -8,7 +8,7 @@ ActiveAdmin.register Categoryy do
 
 #
  permit_params :title
-#
+ 
 # or
 #
 # permit_params do
