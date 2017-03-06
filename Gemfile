@@ -58,5 +58,4 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 
-gem "rmagick"
-gem "carrierwave"
+gem 'carrierwave', '~> 1.0'

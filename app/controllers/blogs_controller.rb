@@ -1,11 +1,14 @@
 class BlogsController < InheritedResources::Base
-def index
+	def index
 	if 
      @blogs = Blog.search(params[:search])
 	else
     @blogs = Blog.all
    end
-end
+	end
+
+  
+  
 
 
 # def show

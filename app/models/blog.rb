@@ -1,4 +1,5 @@
 class Blog < ApplicationRecord
+mount_uploader :images, AvatarUploader
 has_many :comnnts
 belongs_to :categoryy
   validates :title, presence: true,
