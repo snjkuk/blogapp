@@ -9,9 +9,7 @@
     <%= submit_tag "Search", :title => nil %>
   </p>
 <% end %>
-<%= @blog %>
-
-   
+<%= @blog %>   
     
   
 
@@ -32,7 +30,7 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= blog.description %></td>
-        <td><%= blog.images %></td>
+        <td><%= image_tag (blog.images) %></td>
         <td><%= blog.dropdown %></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
@@ -44,6 +42,4 @@
 
 <br>
 
-    
-
-
+ 
