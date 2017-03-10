@@ -59,3 +59,8 @@ gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 
 gem 'carrierwave', '~> 1.0'
+gem "gmail"
+gem "omniauth-google-oauth2"
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
