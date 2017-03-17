@@ -10,5 +10,4 @@ class User1 < ActiveRecord::Base
     end
   end
   belongs_to :user
-  has_many :users
 end
