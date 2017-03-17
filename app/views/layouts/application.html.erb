@@ -38,7 +38,13 @@
       Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to 'Login', new_user_session_path %>
+    
+
     <% end %>
+   
+    <%= link_to "Sign out", new_user_session_path, id: "sign_out" %>
+    
+  
     <form class="navbar-form navbar-left">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
@@ -63,8 +69,7 @@
   </head>
 
   <body>
-  	
-
+     
     <%= yield %>
   </body>
 </html>
