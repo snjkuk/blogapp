@@ -38,11 +38,9 @@
       Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to 'Login', new_user_session_path %>
-    
-
     <% end %>
    
-    <%= link_to "Sign out", new_user_session_path, id: "sign_out" %>
+    
     
   
     <form class="navbar-form navbar-left">
@@ -70,6 +68,13 @@
 
   <body>
      
+  <% if current_user1 %>
+    Welcome <strong><%= current_user1.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    
+  <% end %>
+
     <%= yield %>
   </body>
 </html>
