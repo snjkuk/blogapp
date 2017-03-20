@@ -34,12 +34,7 @@
       <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul> -->
-    <% if current_user %>
-      Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to 'Login', new_user_session_path %>
-    <% end %>
-   
+    
     
     
   
