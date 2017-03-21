@@ -5,6 +5,16 @@
       <%= link_to 'Login', new_user_session_path %>
     <% end %>
 
+    <% if current_user %>
+     <h1><%= link_to 'Create New Blog', new_blog_path %><h1>
+    <% else %>
+    <% end %>
+    <% if current_user %>
+     <%= link_to 'show blog', blogs_path %>
+    <% else %>
+    <% end %>
+     
+
    
    
   
@@ -47,7 +57,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <!-- <img src="https://www.theblogstarter.com/wp-content/uploads/2016/01/start-your-blog-4-steps.png" style="width:50%"> -->
-    <h1><%= link_to 'Create New Blog', new_blog_path %><h1>
+
    <!--  <img src= "http://simpleeconomist.com/wp-content/uploads/2014/08/blog.jpg" style="width:50%"> -->
     <img src ="http://www.higher-education-marketing.com/uploads/Blogging.jpg" style="width:50%">
   </header>
