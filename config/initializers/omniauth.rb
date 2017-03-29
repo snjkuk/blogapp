@@ -6,5 +6,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   #   scope: ['https://mail.google.com/','contacts','plus.login','plus.me','userinfo.email','userinfo.profile']
      provider :twitter, "37FRvK516zX4PiWGzXzRMja0J", "5lgd0wWmDAm9KoNyxV8jVuiDDCrbWMmpVt3UPLK583V4ARcHWA"
      provider :facebook, "1857150984499762", "c9b581e5290d3b5c0a0268ded29f4664"
-     provider :linkedin, "810m8p5cc6z36l", "HMEsQU91aHtZg9fe"
+     provider :linkedin, "81wm79k2ialoy1", "W7nu8kvV67oKhdAD"
 end
