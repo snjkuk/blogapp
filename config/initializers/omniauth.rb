@@ -1,7 +1,7 @@
 OmniAuth.config.logger = Rails.logger
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-      provider :google_oauth2, "868445552067-581jrmc8dmssbdml257slqkvkvf4qs04.apps.googleusercontent.com", "MbNuXqNasBWpjz-NZskCbLo4"
+      provider :google_oauth2, "868445552067-eeeghvd1o6kd71ogvo2qoi74a55q6gki.apps.googleusercontent.com", "hlgtS5NxutaWncrzHuQt9YKT"
      # provider :google_oauth2, "109313246351-hd9l5gt2d4u3mcpuj2r49cgv11dj1av7.apps.googleusercontent.com", "emyojGz9bZleTL4-FetbgXA5"
   #   scope: ['https://mail.google.com/','contacts','plus.login','plus.me','userinfo.email','userinfo.profile']
      provider :twitter, "37FRvK516zX4PiWGzXzRMja0J", "5lgd0wWmDAm9KoNyxV8jVuiDDCrbWMmpVt3UPLK583V4ARcHWA"
